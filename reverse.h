@@ -28,4 +28,4 @@ void print_stack(char msg[]);   //스택 출력
 void inputchar(char *str);  //문자열을 사용자로부터 받기
 void pushchar(char str[]);  //문자열을 스택에 기입
 int checkPalindrome(char str[]); //회문인지 확인
-void checkAnotherchar(char *str, int n); //문자열에서 대문자는 소문자로 바꿔주고 공백, 구두점 등등 삭제.
+void checkAnotherchar(char *str); //문자열에서 대문자는 소문자로 바꿔주고 공백, 구두점 등등 삭제.
