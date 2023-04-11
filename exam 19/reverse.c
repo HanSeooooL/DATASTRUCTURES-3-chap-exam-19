@@ -16,8 +16,8 @@ int checkPalindrome(char str[]) //회문인지 확인
 {
     unsigned int n;
     char *s1;
-    n = (int)strlen(str);
-    s1 = (char*)malloc(sizeof(char) * n);
+    n = (int)strlen(str);   //str문자열의 길이 대입
+    s1 = (char*)malloc(sizeof(char) * n);   //s1 메모리 할당
     strcpy(s1, str);
     init_stack();   //스택 초기화
     checkAnotherchar(s1, n);    //문자열에 공백, 구두점 등등 삭제 및 소문지화
@@ -26,8 +26,12 @@ int checkPalindrome(char str[]) //회문인지 확인
     for (int i = 0; i < n; i++)
     {
         if(s1[i] != pop())
+        {
+            free(s1);
             return 0;
+        }
     }
+    free(s1);
     return 1;
 }
 
@@ -45,6 +49,7 @@ void checkAnotherchar(char str[], int n) //문자열에서 대문자는 소문�
         }
     }
     strcpy(str, s1);
+    free(s1);
 }
 
 void pushchar(char str[])   //문자열에 있는 데이터를 push해주는 함수
