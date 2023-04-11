@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A4A6B36629E5B9DA00450417 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A4A6B36529E5B9DA00450417 /* main.c */; };
+		A4A6B36E29E5B9ED00450417 /* reverse.c in Sources */ = {isa = PBXBuildFile; fileRef = A4A6B36D29E5B9ED00450417 /* reverse.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		A4A6B36229E5B9DA00450417 /* exam 19 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "exam 19"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A6B36529E5B9DA00450417 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		A4A6B36C29E5B9ED00450417 /* reverse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reverse.h; sourceTree = "<group>"; };
+		A4A6B36D29E5B9ED00450417 /* reverse.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = reverse.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,7 @@
 		A4A6B35929E5B9DA00450417 = {
 			isa = PBXGroup;
 			children = (
+				A4A6B36C29E5B9ED00450417 /* reverse.h */,
 				A4A6B36429E5B9DA00450417 /* exam 19 */,
 				A4A6B36329E5B9DA00450417 /* Products */,
 			);
@@ -57,6 +61,7 @@
 		A4A6B36429E5B9DA00450417 /* exam 19 */ = {
 			isa = PBXGroup;
 			children = (
+				A4A6B36D29E5B9ED00450417 /* reverse.c */,
 				A4A6B36529E5B9DA00450417 /* main.c */,
 			);
 			path = "exam 19";
@@ -119,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A6B36E29E5B9ED00450417 /* reverse.c in Sources */,
 				A4A6B36629E5B9DA00450417 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
